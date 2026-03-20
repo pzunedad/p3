@@ -1,0 +1,81 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    border: solid 2px #CCCC;
+    width: fit-content;
+    margin: 0 auto;
+    /* Hacer la tarjeta más grande */
+    min-width: 800px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.imageContainer {
+    flex-shrink: 0;
+}
+
+.imageContainer img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.productDataContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 6px 15px 6px 0px;
+    max-height: 600px;
+}
+
+.productDataContainer h2 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.productDataContainer p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.productDataContainer strong {
+    color: #555;
+    font-weight: 600;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 100%;
+    min-width: 350px;
+}
+
+.boton {
+    margin-top: auto;
+}
+
+.boton button {
+    padding: 12px 24px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+}
+
+.boton button:hover {
+    background: #764ba2;
+    box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3);
+}
