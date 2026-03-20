@@ -1,6 +1,8 @@
 import { Product } from "@/types/products";
 import { useRouter } from "next/navigation";
+import SectionContainer from "./SectionContainer";
 import "./productcard.css"
+
 
 type ProductCardProps = {
   product: Product;
@@ -11,7 +13,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const router = useRouter();
 
   return (
-    <div className="mainContainer">
+    <SectionContainer className="mainContainer">
       <div className="imageContainer">
         <img 
           src={product.thumbnail} 
@@ -34,7 +36,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           <button onClick={() => router.back()}>Volver</button>
         </div>
       </div>
-    </div>
+    </SectionContainer>
   );
 };
 

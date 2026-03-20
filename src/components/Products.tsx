@@ -1,6 +1,8 @@
 import { Product as ProductType } from '@/types/products';
 import { useRouter } from 'next/navigation'
+import SectionContainer from './SectionContainer';
 import "./products.css"
+
 
 type Props = {
   products: ProductType[];
@@ -17,7 +19,7 @@ const Products = ({ products }: Props) => {
   return (
     <div className="product-grid">
       {products.map((product) => (
-        <div key={product.id} className="product-card">
+        <SectionContainer key={product.id} className="product-card">
           {product.thumbnail && (
             <img
               src={product.thumbnail}
@@ -32,7 +34,7 @@ const Products = ({ products }: Props) => {
               <button onClick={() => handleProductClick(product.id)}>Ver detalles</button>
             </div>
           </div>
-        </div>
+        </SectionContainer>
       ))}
     </div>
   );

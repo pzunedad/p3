@@ -3,14 +3,9 @@
     flex-direction: row;
     align-items: center;
     gap: 30px;
-    padding: 30px;
-    border: solid 2px #CCCC;
     width: fit-content;
     margin: 0 auto;
-    /* Hacer la tarjeta más grande */
     min-width: 800px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 12px;
 }
 
 .imageContainer {
@@ -30,7 +25,6 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 6px 15px 6px 0px;
     max-height: 600px;
 }
 
